@@ -1,13 +1,22 @@
-const a = 5;
-const b = 10;
 
-function add(num1,num2){
-    let c = num1 + num2;
-    return c;
+console.log('START')
+function computerPlay(){
+   let  gameRndOpuit = ['rock','paper', 'scisors'];
+    let rndNumber = 1 /*(Math.random()*3,1);*/
+    console.log(rndNumber);
+    return  gameRndOpuit[rndNumber];
 }
 
-function print(){
-    console.log(add(a,b));
+console.log(computerPlay());
+ computerSelection = computerPlay();
+playerSelection = computerPlay();
+
+console.log(computerSelection);
+console.log(playerSelection);
+
+function playRound(computerSelection,playerSelection){
+    console.log('You both recieved '+ computerSelection + ' - ' + playerSelection)
 }
 
-print();
+playRound(computerSelection,playerSelection); 
+console.log('FINISH')
